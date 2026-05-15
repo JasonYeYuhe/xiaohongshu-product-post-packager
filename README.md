@@ -11,10 +11,10 @@ Turn product screenshots, setup captures, official source links, and rough notes
 
 ## Install in Codex
 
-From a machine with Codex skills available, run:
+Run:
 
 ```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
   --repo JasonYeYuhe/xiaohongshu-product-post-packager \
   --path skills/xiaohongshu-product-post-packager
 ```
