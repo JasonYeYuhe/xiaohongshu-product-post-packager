@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xiaohongshu Product Post Packager"
+  short_description: "Create publish-ready Xiaohongshu post packs"
+  default_prompt: "Use this skill to turn my product screenshots, source links, and rough notes into a publish-ready Xiaohongshu image carousel plus caption."
