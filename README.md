@@ -1,5 +1,7 @@
 # Xiaohongshu Product Post Packager
 
+![Xiaohongshu Product Post Packager banner](assets/readme-banner.png)
+
 Turn product screenshots, setup captures, official source links, and rough notes into a publish-ready Xiaohongshu post pack.
 
 ## What it helps with
