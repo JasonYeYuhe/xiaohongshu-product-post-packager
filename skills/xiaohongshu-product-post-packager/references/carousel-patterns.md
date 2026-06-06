@@ -11,6 +11,21 @@
 7. **Caveats** — platform limits, account requirements, rollout notes
 8. **Close** — save / try / compare / comment prompt
 
+## Feature-first answer arc
+
+Use when the title is a provocative product question, for example “Can X replace Y?” or “Do we still need Y after this update?”
+
+1. **Question cover** — ask the sharp question, but keep it grounded in the feature.
+2. **What changed** — explain the new capability plainly before giving the verdict.
+3. **Capability map** — show 3 concrete things the feature can now do.
+4. **Old vs new loop** — compare the previous manual workflow with the new shorter loop.
+5. **Best-fit use cases** — say where the feature is actually useful.
+6. **Boundary** — explain what is not replaced.
+7. **Limits** — availability, environment, permissions, and verification caveats.
+8. **Answer / how to use** — answer the title question and give the practical prompt or next move.
+
+For captions, follow the same order: feature first, why it matters, practical usage, then the answer. Avoid opening with “不行 / 不能替代” when the title already creates curiosity.
+
 ## Strong hook shapes
 
 - “终于，X 可以 Y 了”
@@ -31,9 +46,14 @@
 
 - One idea per card
 - Prefer concrete verbs over abstract praise
+- For Chinese tech posts, prefer natural explanation over direct translation. Keep product names intact (`Codex`, `Xcode`, `SwiftUI`) and translate concepts like `agent loop` into plain workflow language unless the term itself matters.
 - Keep caveats factual, not apologetic
 - If a sentence only exists to sound excited, cut it
 - If a sentence saves the reader a mistake, keep it
+
+## Visual reuse rule
+
+When a previous pack is named as the desired style, inspect its contact sheet and generation script before designing. Reuse the background system, palette, spacing, and card rhythm unless the new topic clearly needs a different direction. Still version outputs instead of overwriting during iteration.
 
 
 ## Method / workflow arc

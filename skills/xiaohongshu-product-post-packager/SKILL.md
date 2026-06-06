@@ -31,6 +31,8 @@ Build a post pack that is safe to publish, easy to skim, and already packaged fo
    - Prefer one idea per card.
    - Use exact UI screenshots where they teach; use text-only cards, diagrams, or reconstructed file/code panels where screenshots would only add noise.
    - Avoid pure decorative mockups that are not anchored in the user's real workflow; they often look polished but feel less credible.
+   - When the user likes a previous pack's visual style, inspect that pack's contact sheet and generation script, then reuse its background system, palette, spacing, and card language before inventing a new direction.
+   - For timely product-update posts with a provocative question title, lead with the feature and what changed first, then answer the question near the end; do not let the caveat kill the hook on card 1.
    - Read `references/carousel-patterns.md` when choosing the arc or caption tone.
 
 4. **Write claims that can survive contact with reality.**
@@ -62,6 +64,10 @@ Build a post pack that is safe to publish, easy to skim, and already packaged fo
    - Confirm no sensitive screenshot survived into the final pack.
    - Re-open the contact sheet and at least the cover plus any dense code/file cards before handoff.
    - Check that synthetic/reconstructed visuals do not display missing glyph boxes, cropped text, or fake details that would undermine trust.
+   - For Chinese cards with English/code terms, inspect final PNGs at full size for bad line breaks. Do not split product names, code filenames, acronyms, URLs, or English words such as `CLAUDE.md`, `Claude`, `API`, `MVP`, or `prompt`; avoid leaving punctuation such as `。` or `.` alone on a new line. Prefer shorter copy, manual line breaks, or token-aware wrapping over character-by-character wrapping.
+   - Inspect every final card at full size, not just the contact sheet. Fix text overlap, clipped cards, cropped terminal/window controls, code panels that run into borders, and bottom notes that collide with footers.
+   - If a requested visual reference conflicts with the post's stronger design direction, use it only as mood input. Favor the clearest editorial system for the topic, and version outputs (`publish_pack_v2`, `publish_pack_v3`) during visual iteration instead of overwriting.
+   - Copy source images from temporary attachment paths into a stable `source_assets/` folder before generation so later revisions can be regenerated after `/tmp` is cleaned.
    - Confirm the first card works even if the user only sees it for one second.
 
 ## Output Standard
@@ -70,6 +76,7 @@ Build a post pack that is safe to publish, easy to skim, and already packaged fo
 - Preserve the product UI or source artifact; decorate around it rather than burying it.
 - Favor grounded visuals: real screenshots, real folder structures, real code excerpts, or faithful public-safe reconstructions.
 - Keep typography large, sparse, and mobile-readable.
+- Write Chinese copy for humans first: explain the feature in plain language, keep product names intact (`Codex`, `Xcode`, `SwiftUI`), and avoid untranslated jargon such as `agent loop` unless it is clearly explained.
 - If the user gives a rough caption, improve it without sanding away their voice.
 - When there is a tension between completeness and publishability, choose publishability.
 - For method/tutorial posts, make the reader feel they can reproduce the workflow after reading, not merely admire the output.
